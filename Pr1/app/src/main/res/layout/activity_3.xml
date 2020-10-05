@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    tools:context=".Activity3">
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        android:columnCount="3"
+        android:background="#000"
+        android:id="@+id/background2">
+
+        <Button
+            android:text="FFFF00"
+            android:onClick="setColor"
+            android:layout_column="0"
+            android:layout_row="0" />
+        <Button android:text="0000ff"
+            android:onClick="setColor"
+            android:layout_column="1"
+            android:layout_row="0"/>
+        <Button android:text="00ff00"
+            android:onClick="setColor"
+            android:layout_column="2"
+            android:layout_row="0"  />
+        <Button android:text="00ffff"
+            android:onClick="setColor"
+            android:layout_column="0"
+            android:layout_row="1"/>
+        <Button android:text="ff0000"
+            android:onClick="setColor"
+            android:layout_column="1"
+            android:layout_row="1"/>
+        <Button android:text="FF00ff"
+            android:onClick="setColor"
+            android:layout_column="2"
+            android:layout_row="1"/>
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
